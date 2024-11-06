@@ -26,6 +26,15 @@
       "lastName": "Shankar",
       "dob": "2003-03-03",
       "doj": "2024-04-03"
+    },
+    {
+      "id": "EMP_fws8M",
+      "employeeId": "EMP_fws8M",
+      "nic": "42343",
+      "firstName": "aru",
+      "lastName": "ran",
+      "dob": "2012-01-31",
+      "doj": "2024-10-29"
     }
   ],
   "users": [
@@ -49,6 +58,13 @@
       "role": "Manager",
       "employeeId": "EMP_mIImt",
       "id": "EMP_mIImt"
+    },
+    {
+      "id": "EMP_fws8M",
+      "employeeId": "EMP_fws8M",
+      "username": "EMP_fws8M",
+      "password": "pwd123",
+      "role": "Employee"
     }
   ],
   "leaveRequests": [

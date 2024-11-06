@@ -10,6 +10,14 @@
     box-sizing: border-box;
 }
 
+
+.title{
+color: #ffffff;
+position:right  ;
+}
+
+
+
 body {
     display: flex;
     justify-content: center;
