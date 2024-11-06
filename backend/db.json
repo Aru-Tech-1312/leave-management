@@ -120,6 +120,15 @@
       },
       "processedDate": "2024-11-05",
       "rejectionReason": "not holiday\n"
+    },
+    {
+      "id": "8f22",
+      "employeeId": "EMP_4SK8Q",
+      "reason": "fever",
+      "dateFrom": "2024-11-07",
+      "numOfDays": "3",
+      "applicationDate": "2024-11-06",
+      "status": "Pending"
     }
   ]
 }

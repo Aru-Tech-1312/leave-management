@@ -2,17 +2,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #2e66a6, #902340);
+    /*min-height: 100vh;
+    background: linear-gradient(135deg, #2e66a6, #902340); */
+    background-color: #1f293a;
 }
 
 .container {
-    width: 1000px;
+    width: 80%;
     height: 300px;
     padding: 25px;
-    background: linear-gradient(135deg, #96bdea, #e22f5f);
+    top: 10px;
+    /* background: linear-gradient(135deg, #96bdea, #e22f5f); */
+    background-color: #0ef;;
     border-radius: 12px;
-    box-shadow: 25px 26px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 25px 26px rgba(0, 0, 0, 0.2); */
     transition: opacity 3s ease, transform 3s ease;
     font-size: 22px;
 }
@@ -59,13 +62,14 @@ body {
 }
 
 .btn-logout:hover {
-    background: #c31a4d;
+    background: #ff0000;
 }
 
 h2 {
     margin: 20px 0;
     text-align: center;
-    color: #6a041f;
+    color: black;
+    font-size: larger;
 
 }
 
@@ -93,21 +97,21 @@ select {
 
 }
 .status1{
-    background-color: #e0c3cf;
+    background-color: #ffffff;
     border-style: none;
-    padding: 10px;
+    /* padding: 10px; */
     color: #05203f;
 }
 
 #statusFilter{
-    background-color: #e0c3cf;
-    border-color:#e94e77;
+    background-color: #ffffff;
+    border-color:#ffffff;
     border-style: groove;
 }
 
 
 #statusFilter:hover{
-    background-color: #d5adbe;;
+    background-color: #fff7f7;
 }
 
 select:focus {
