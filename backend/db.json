@@ -128,7 +128,17 @@
       "dateFrom": "2024-11-07",
       "numOfDays": "3",
       "applicationDate": "2024-11-06",
-      "status": "Pending"
+      "status": "Approved",
+      "employee": {
+        "id": "EMP_4SK8Q",
+        "employeeId": "EMP_4SK8Q",
+        "nic": "723451278V",
+        "firstName": "Leena",
+        "lastName": "Holin",
+        "dob": "1972-12-05",
+        "doj": "2024-09-01"
+      },
+      "processedDate": "2024-11-06"
     }
   ]
 }

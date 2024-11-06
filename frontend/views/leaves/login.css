@@ -1,4 +1,4 @@
-/* 
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    /* background: linear-gradient(135deg, #4a90e2, #e94e77); */
     background-color:#1f293a;
     min-height: 100vh;
     position: relative;
@@ -127,7 +127,7 @@ h2 {
     text-decoration: underline;
 }
 
-Animation for blinking circles
+/* Animation for blinking circles */
 .container span {
     position: absolute;
     left: 70px;
@@ -152,11 +152,11 @@ Animation for blinking circles
     }
 }
 
-Mobile responsiveness
+/* Mobile responsiveness */
 @media (max-width: 500px) {
     .container {
         padding: 10px;
     }
 
   
-}  */
+}

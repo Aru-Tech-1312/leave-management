@@ -27,11 +27,13 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
                 if (user.role == 'Admin') {
                     window.location.href = 'leaveRequest.html';
-                    alert('Login successful!');
+                    // alert('Login successful!');
                 } else if (user.role == 'Employee' || user.role == 'Manager') {
                     window.location.href = 'managerLeaveRequest.html';
-                    alert('Login successful!');
+                    // alert('Login successful!');
+                    
                 }
+                
             } else {
                 alert('Employee data not found.');
             }
