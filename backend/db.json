@@ -26,15 +26,6 @@
       "lastName": "Shankar",
       "dob": "2003-03-03",
       "doj": "2024-04-03"
-    },
-    {
-      "id": "EMP_fws8M",
-      "employeeId": "EMP_fws8M",
-      "nic": "42343",
-      "firstName": "aru",
-      "lastName": "ran",
-      "dob": "2012-01-31",
-      "doj": "2024-10-29"
     }
   ],
   "users": [
@@ -58,13 +49,6 @@
       "role": "Manager",
       "employeeId": "EMP_mIImt",
       "id": "EMP_mIImt"
-    },
-    {
-      "id": "EMP_fws8M",
-      "employeeId": "EMP_fws8M",
-      "username": "EMP_fws8M",
-      "password": "pwd123",
-      "role": "Employee"
     }
   ],
   "leaveRequests": [
@@ -138,23 +122,13 @@
       "rejectionReason": "not holiday\n"
     },
     {
-      "id": "8f22",
+      "id": "dbc7",
       "employeeId": "EMP_4SK8Q",
-      "reason": "fever",
-      "dateFrom": "2024-11-07",
-      "numOfDays": "3",
+      "reason": "function",
+      "dateFrom": "2024-11-08",
+      "numOfDays": "4",
       "applicationDate": "2024-11-06",
-      "status": "Approved",
-      "employee": {
-        "id": "EMP_4SK8Q",
-        "employeeId": "EMP_4SK8Q",
-        "nic": "723451278V",
-        "firstName": "Leena",
-        "lastName": "Holin",
-        "dob": "1972-12-05",
-        "doj": "2024-09-01"
-      },
-      "processedDate": "2024-11-06"
+      "status": "Pending"
     }
   ]
 }
