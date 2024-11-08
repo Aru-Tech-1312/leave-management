@@ -26,6 +26,15 @@
       "lastName": "Shankar",
       "dob": "2003-03-03",
       "doj": "2024-04-03"
+    },
+    {
+      "id": "EMP_uERxH",
+      "employeeId": "EMP_uERxH",
+      "nic": "wdf",
+      "firstName": "fw",
+      "lastName": "fwef",
+      "dob": "2024-10-28",
+      "doj": "2024-11-06"
     }
   ],
   "users": [
@@ -49,6 +58,13 @@
       "role": "Manager",
       "employeeId": "EMP_mIImt",
       "id": "EMP_mIImt"
+    },
+    {
+      "username": "EMP_uERxH",
+      "password": "pwd123",
+      "role": "Manager",
+      "employeeId": "EMP_uERxH",
+      "id": "EMP_uERxH"
     }
   ],
   "leaveRequests": [
