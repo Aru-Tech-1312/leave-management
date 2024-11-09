@@ -86,6 +86,13 @@ h4 {
     border-color: #0ef;
 }
 
+h1{
+    font-size: 3em;
+    color:#0ef ;
+    /* text-align: center; */
+    /* margin-bottom: 20px; */
+    font-family:Times New Roman;
+}
 .input-box label {
     position: absolute;
     top: 50%;

@@ -149,11 +149,11 @@
       "role": "Employee"
     },
     {
-      "id": "EMP_WDJa9",
-      "employeeId": "EMP_WDJa9",
       "username": "EMP_WDJa9",
       "password": "pwd123",
-      "role": "Employee"
+      "role": "Manager",
+      "employeeId": "EMP_WDJa9",
+      "id": "EMP_WDJa9"
     },
     {
       "username": "EMP_Xljo7",
@@ -250,8 +250,15 @@
       "numOfDays": "4",
       "applicationDate": "2024-11-09",
       "status": "Pending"
+    },
+    {
+      "id": "2180",
+      "employeeId": "EMP_WDJa9",
+      "reason": "comple the leave management",
+      "dateFrom": "2024-11-11",
+      "numOfDays": "1",
+      "applicationDate": "2024-11-10",
+      "status": "Pending"
     }
-    
-    
   ]
 }
