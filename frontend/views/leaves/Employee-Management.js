@@ -1,5 +1,15 @@
 
+
 document.addEventListener("DOMContentLoaded", async () => {
+
+    //login alert
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (!loggedInUser) {
+        alert('You must log in first!');
+        window.location.href = 'login.html';
+        return;
+    }
+    console.log(loggedInUser);
 
     const apiUrl = "http://localhost:3000/employees";
     const userApiUrl = "http://localhost:3000/users";
@@ -31,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         alert('You have been logged out.');
         window.location.href = 'login.html';
     });
-    
+
     // Render Employees
     const renderEmployees = () => {
         employeeTableBody.innerHTML = "";
@@ -139,7 +149,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 id: empId,
                 employeeId: empId,
                 username: empId,
-                password: "pwd123",
+                password: "1234",
                 role: "Employee" // Default role as Employee; can be modified as needed
             };
             await fetch(userApiUrl, {
@@ -221,6 +231,18 @@ document.addEventListener("DOMContentLoaded", async () => {
             toast.classList.remove("show");
         }, 3000);
     };
+
+    // Validation for NIC (12 digits or 9 digits with 'V' or 'X')
+    // const nicRegex = /^(?:\d{9}[vVxX]|\d{12})$/;
+    // if (!nicRegex.test(nic)) {
+    //     alert("NIC must be 12 digits or 9 digits followed by 'V' or 'X'.");
+    //     document.getElementById('nic').style.border = "1px solid red";
+    //     return;
+    // } else {
+    //     document.getElementById('nic').style.border = "";
+    // }
+
+
     // Search Employees
     document.getElementById("searchInput").oninput = (e) => {
         const query = e.target.value.toLowerCase();

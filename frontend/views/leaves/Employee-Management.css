@@ -11,12 +11,13 @@
 }
 #logoutButton {
     padding: 5px 15px;
-    font-size: 0.9rem;
+    /* border-style:outset; */
+    border-color: #c31a4d;
     background: #da1c1c;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 #logoutButton:hover {
@@ -40,11 +41,12 @@ h1 {
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 2px solid #4a90e2;
-    border-radius: 20px;
-    color: #05203f;
+    /* border: 2px solid #ffffff; */
+    border-radius: 10px;
+    color: #000000;
     outline: none;
     font-size: 1.2rem;
+    background-color: #ffffff;
 }
 
 #employeeTable {
@@ -76,26 +78,30 @@ h1 {
 
 #employeeTable tr {
     background-color: #ffffff;
-    font-family: verdana;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: bold;
 }
 
 button {
     padding: 8px 12px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 5px;
     background-color: #4a90e2;
     color: #fff;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: blue;
 }
-
+#createEmployeeBtn{
+    font-weight: bold;
+}
 .modal {
     display: none;
     position: fixed;

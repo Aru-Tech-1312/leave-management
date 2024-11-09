@@ -64,6 +64,8 @@ h4 {
 .input-box {
     position: relative;
     margin: 25px 0;
+    color: #ffffff;
+   
 }
 
 .input-box input {

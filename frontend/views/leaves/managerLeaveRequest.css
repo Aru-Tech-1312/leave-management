@@ -65,11 +65,13 @@ body {
     background: #ff0000;
 }
 
-h2 {
+h1 {
     margin: 20px 0;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: larger;
+    font-weight: bold;
+    font-size: 2rem;
 
 }
 
@@ -85,7 +87,7 @@ label {
 input,
 select {
     background-color: #e0c3cf;
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border-color:#e94e77;
     border-radius: 15px;
