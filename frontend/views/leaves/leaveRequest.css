@@ -2,19 +2,19 @@
 body {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 5px;
     /* margin-top: 10px; */
     /* min-height: 100vh; */
-    background-color: #ffffff;
+    background-color: whitesmoke;
 }
 
 
 
 .container {
-    width: 580px;
-    height: 880px;
-    padding: 30px;
-    margin-top: 5px;
+    width: 600px;
+    height: 895px;
+    padding: 25px;
+    margin-top: 1px;
     /* height: inherit; */
     /* background: linear-gradient(135deg, #96bdea, #e22f5f); */
     background-color: #1f293a;
@@ -23,7 +23,7 @@ body {
     /* text-align: end; */
 
     animation: fadeIn 0.8s ease;
-    margin-left: 10px;
+    margin-left: 5px;
     /* margin-right: auto; */
     font-family: sans-serif;
 
@@ -31,9 +31,9 @@ body {
 
 .container-01 {
     width: 1580px;
-    height: 880px;
-    padding: 30px;
-    margin-top: 5px;
+    height: 895px;
+    padding: 25px;
+    margin-top: 1px;
     /* height: inherit; */
     /* background: linear-gradient(135deg, #96bdea, #e22f5f); */
     background-color: #1f293a;
@@ -42,7 +42,7 @@ body {
     /* text-align: end; */
 
     animation: fadeIn 0.8s ease;
-    margin-left: 20px;
+    margin-left: 8px;
     /* margin-right: auto; */
     font-family: sans-serif;
 }
@@ -126,7 +126,7 @@ h2 {
 .input-box input[type="text"],
 .input-box input[type="date"],
 .input-box input[type="number"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
@@ -228,7 +228,7 @@ input[type="number"]:focus~label {
 
 h1 {
     color: rgb(255, 255, 255);
-    /* align-items: center; */
+    text-align: center;
 }
 
 

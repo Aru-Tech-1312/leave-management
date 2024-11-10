@@ -74,6 +74,19 @@ h1 {
     font-size: 2rem;
 
 }
+.status.pending {
+    color: rgb(219, 223, 24);
+    
+    
+}
+
+.status.approved {
+    color: rgb(25, 209, 25);
+}
+
+.status.rejected {
+    color: red;
+}
 
 label {
     display: block;

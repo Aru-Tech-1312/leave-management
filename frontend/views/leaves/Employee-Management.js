@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             <td>${employee.doj}</td>
             <td>
             <button onclick="editEmployee('${employee.employeeId}')">Edit</button>
+            
+            <button onclick="editCredentials('${employee.employeeId}')">Edit Credentials</button>
             <button onclick="deleteEmployee('${employee.employeeId}')">Delete</button>
-            <button onclick="editCredentials('${employee.employeeId}')">Edit
-            Credentials</button>
             </td>
             `;
             employeeTableBody.appendChild(row);

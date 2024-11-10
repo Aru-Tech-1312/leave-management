@@ -31,7 +31,7 @@
       "id": "EMP_d3MnY",
       "employeeId": "EMP_d3MnY",
       "nic": "987654321",
-      "firstName": "nirojan",
+      "firstName": "Nirojan",
       "lastName": "bala",
       "dob": "2022-02-09",
       "doj": "2024-11-10"
@@ -39,7 +39,7 @@
     {
       "id": "EMP_p3dTa",
       "employeeId": "EMP_p3dTa",
-      "nic": "33453647869673",
+      "nic": "334536478",
       "firstName": "narthanan",
       "lastName": "sathananthan",
       "dob": "2016-06-14",
@@ -57,7 +57,7 @@
     {
       "id": "EMP_5Rwbg",
       "employeeId": "EMP_5Rwbg",
-      "nic": "25436478980096779699",
+      "nic": "254364789800",
       "firstName": "jroopan",
       "lastName": "nesaraj",
       "dob": "2024-10-24",
@@ -73,15 +73,6 @@
       "doj": "2024-11-13"
     },
     {
-      "id": "EMP_WDJa9",
-      "employeeId": "EMP_WDJa9",
-      "nic": "123456789x",
-      "firstName": "aruran",
-      "lastName": "kulasegaram",
-      "dob": "2024-10-29",
-      "doj": "2024-11-09"
-    },
-    {
       "id": "EMP_Xljo7",
       "employeeId": "EMP_Xljo7",
       "nic": "1234567890",
@@ -89,6 +80,15 @@
       "lastName": "sir",
       "dob": "2024-09-25",
       "doj": "2024-11-27"
+    },
+    {
+      "id": "EMP_Gpwbd",
+      "employeeId": "EMP_Gpwbd",
+      "nic": "123345464v",
+      "firstName": "some",
+      "lastName": "one",
+      "dob": "2024-11-04",
+      "doj": "2024-11-11"
     }
   ],
   "users": [
@@ -149,18 +149,18 @@
       "role": "Employee"
     },
     {
-      "username": "EMP_WDJa9",
-      "password": "pwd123",
-      "role": "Manager",
-      "employeeId": "EMP_WDJa9",
-      "id": "EMP_WDJa9"
-    },
-    {
       "username": "EMP_Xljo7",
       "password": "pwd123",
       "role": "Manager",
       "employeeId": "EMP_Xljo7",
       "id": "EMP_Xljo7"
+    },
+    {
+      "id": "EMP_Gpwbd",
+      "employeeId": "EMP_Gpwbd",
+      "username": "EMP_Gpwbd",
+      "password": "1234",
+      "role": "Employee"
     }
   ],
   "leaveRequests": [
@@ -253,7 +253,7 @@
     },
     {
       "id": "2180",
-      "employeeId": "EMP_WDJa9",
+      "employeeId": null,
       "reason": "comple the leave management",
       "dateFrom": "2024-11-11",
       "numOfDays": "1",

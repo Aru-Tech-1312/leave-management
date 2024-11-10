@@ -15,7 +15,7 @@ if(loggedInUser.role == 'Admin'){
 
     // Display welcome message
     const welcomeMessage = document.getElementById('welcomeMessage');
-    welcomeMessage.textContent = `Welcome, 
+    welcomeMessage.textContent = `Welcome Back, 
     ${loggedInUser.firstName} ${loggedInUser.lastName}`;
 
     // Logout button functionality

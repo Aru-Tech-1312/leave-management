@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
     // Display welcome message
     const welcomeMessage = document.getElementById('welcomeMessage');
-    welcomeMessage.textContent = `Welcome, ${loggedInUser.firstName} ${loggedInUser.lastName}`;
+    welcomeMessage.textContent = `Welcome Back, ${loggedInUser.firstName} ${loggedInUser.lastName}`;
 
     // Logout button functionality
     const logoutButton = document.getElementById('logoutButton');
