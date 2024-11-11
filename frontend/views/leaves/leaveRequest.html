@@ -5,62 +5,391 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leave Request</title>
-    <link rel="stylesheet" href="./leaveRequest.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: whitesmoke;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .container {
+            width: 500px;
+            height: 895px;
+            padding: 25px;
+            /* margin-top: 1px; */
+            background-color: #1f293a;
+            border-radius: 12px;
+            animation: fadeIn 0.8s ease;
+            margin-left: 5px;
+            font-family: sans-serif;
+            margin-right: 5px;
+
+        }
+
+        .container-01 {
+            width: 1260px;
+            height: 895px;
+            padding: 25px;
+            background-color: #1f293a;
+            border-radius: 12px;
+            animation: fadeIn 0.8s ease;
+            /* margin-right: 2px; */
+            font-family: sans-serif;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #logoutButton {
+            padding: 5px 15px;
+            border-color: #c31a4d;
+            background: #da1c1c;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: auto;
+
+        }
+
+        #logoutButton:hover {
+            background: #ff0000;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .Image {
+            height: 100%;
+            width: 100%;
+        }
+
+        .icon {
+            text-align: center;
+            font-size: 3rem;
+            color: #ffffff;
+        }
+
+        .input-box {
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .input-box input {
+            color: #630f26;
+        }
+
+
+        .input-box input[type="text"],
+        .input-box input[type="date"],
+        .input-box input[type="number"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            outline: none;
+            background-color: #b3d1f3;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-box input:focus {
+            border-color: #000000;
+            background-color: #ffffff;
+        }
+
+        .input-box label {
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #fdfdfd;
+            margin-right: 2px;
+        }
+
+        input[type="text"]:focus~label,
+        input[type="date"]:focus~label,
+        input[type="number"]:focus~label {
+            color: #4a90e2;
+        }
+
+
+
+
+        .btn {
+            width: 80px;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            background: #4a90e2;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+
+
+        .btn:hover {
+            background-color: #0077ff;
+        }
+
+        .leave-list {
+            margin-top: 20px;
+        }
+
+        .form {
+            margin-top: 80px;
+        }
+
+        .leave-list li {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .status3 {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #ffffff;
+            color: #092e59;
+            width: 500px;
+        }
+
+        .status.pending {
+            color: rgb(219, 223, 24);
+
+
+        }
+
+        .status.approved {
+            color: rgb(25, 209, 25);
+        }
+
+        .status.rejected {
+            color: red;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
-    <div class="container">
-        <div class="header">
-            <h2 id="welcomeMessage"></h2>
-            
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <h2 id="welcomeMessage"></h2>
+
+            </div>
+
+
+            <div class="icon">
+
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+
+            </div>
+
+
+            <h1>Submit Your Leave Request Application</h1>
+            <form id="leaveRequestForm" class="form">
+                <div class="input-box">
+                    <label for="reason">Reason For Leave</label>
+                    <input type="text" id="reason" name="reason" required>
+                </div>
+                <div class="input-box">
+                    <label for="dateFrom">Leave Date From</label>
+                    <input type="date" id="dateFrom" name="dateFrom" required>
+                </div>
+                <div class="input-box">
+                    <label for="numOfDays">Number Of Days</label>
+                    <input type="number" id="numOfDays" name="numOfDays" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="applicationDate">Application Date</label>
+                    <input type="date" id="applicationDate" name="applicationDate" required><br>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+
+            </form>
+
         </div>
 
-
-        <div class="icon">
-
-            <i class="fa fa-envelope-open" aria-hidden="true"></i>
-
+        <div class="container-01">
+            <button id="logoutButton" class="btn-logout" style="position: absolute; right: 60px;top: 50px;">Log
+                out</button>
+            <h1 style="align-items: center;"> Details Of Your Leave Requests</h1>
+            <ul id="leaveRequests" class="leave-list"></ul>
         </div>
 
-
-        <h1>Submit Your Leave Request Application</h2>
-        <form id="leaveRequestForm" class="form">
-            <div class="input-box">
-                <label for="reason">Reason For Leave</label>
-                <input type="text" id="reason" name="reason" required>
-            </div>
-            <div class="input-box">
-                <label for="dateFrom">Leave Date From</label>
-                <input type="date" id="dateFrom" name="dateFrom" required>
-            </div>
-            <div class="input-box">
-                <label for="numOfDays">Number Of Days</label>
-                <input type="number" id="numOfDays" name="numOfDays" required>
-            </div>
-
-            <div class="input-box">
-                <label for="applicationDate">Application Date</label>
-                <input type="date" id="applicationDate" name="applicationDate" required><br>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-           
-        </form>
 
     </div>
 
 
 
-    <div class="container-01">
-        <button id="logoutButton" class="btn-logout" style="position: absolute; right: 60px;top: 50px;">Log out</button>
-        <h1 style="align-items: center;"> Details Of Your Leave Requests</h1>
-        <ul id="leaveRequests" class="leave-list"></ul>
-    </div>
 
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-    <script src="leaveRequest.js"></script>
+
+            if (!loggedInUser) {
+                alert('You must log in first!');
+                window.location.href = 'login.html';
+                return;
+            }
+            console.log(loggedInUser);
+
+            if (loggedInUser.role == 'Admin') {
+                window.location.href = 'managerLeaveRequest.html';
+            }
+
+            // Display welcome message
+            // const welcomeMessage = document.getElementById('welcomeMessage');
+            // welcomeMessage.textContent = `Welcome Back, 
+            // ${loggedInUser.firstName} ${loggedInUser.lastName}`;
+
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            welcomeMessage.textContent = `Welcome Back,${loggedInUser.firstName} ${loggedInUser.lastName}`;
+
+            // Logout button functionality
+
+
+            const leaveRequestForm = document.getElementById('leaveRequestForm');
+            const leaveRequestsList = document.getElementById('leaveRequests');
+
+            leaveRequestForm.addEventListener('submit', async function (event) {
+                event.preventDefault();
+
+                const reason = document.getElementById('reason').value;
+                const dateFrom = document.getElementById('dateFrom').value;
+                const numOfDays = document.getElementById('numOfDays').value;
+                const applicationDate = document.getElementById('applicationDate').value;
+
+                // Validate that application date is less than dateFrom
+                if (new Date(applicationDate) >= new Date(dateFrom)) {
+                    alert('Application date must be earlier than the leave start date.');
+                    return;
+                }
+
+                const newLeaveRequest = {
+                    employeeId: loggedInUser.employeeId,
+                    reason,
+                    dateFrom,
+                    numOfDays,
+                    applicationDate, // Use the selected application date
+                    status: 'Pending' // Initial status
+                };
+
+                try {
+                    const response = await fetch('http://localhost:3000/leaveRequests', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(newLeaveRequest)
+                    });
+
+                    if (response.ok) {
+                        alert('Leave request submitted successfully!');
+                        leaveRequestForm.reset();
+                        loadLeaveRequests(loggedInUser.employeeId);
+                    } else {
+                        alert('Failed to submit leave request.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred while submitting the leave request.');
+                }
+            });
+
+            async function loadLeaveRequests(employeeId) {
+                try {
+                    const response = await fetch(`http://localhost:3000/leaveRequests?employeeId=${employeeId}`);
+                    const leaveRequests = await response.json();
+
+                    leaveRequestsList.innerHTML = '';
+                    leaveRequests.forEach(request => {
+                        const li = document.createElement('li');
+                        li.classList.add('leave-item'); // Add a class for styling
+                        li.innerHTML = `<div class="status3">
+                    <div>Reason: ${request.reason}</div>
+                    <div>From: ${request.dateFrom}</div>
+                    <div>Days: ${request.numOfDays}</div>
+                    <div>Applied on: ${request.applicationDate}</div>
+                    <div>Status: <span class="status ${request.status.toLowerCase()}">${request.status}</span></div></div>
+                `;
+                        leaveRequestsList.appendChild(li);
+                    });
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+
+            loadLeaveRequests(loggedInUser.employeeId);
+        });
+
+    </script>
 </body>
 
 </html>

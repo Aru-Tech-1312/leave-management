@@ -1,78 +1,38 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Navbar</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
-  
-  <link rel="stylesheet" href="../static/css/styles.css">
+  <title>Leave Management System-UT01312</title>
+  <!-- <link rel="stylesheet" href="../static/css/styles.css"> -->
+ 
+  {{style}}
 </head>
 
 <body>
-  <nav class="navbar">
 
-    <div class="navbar-left">
-      <a href="/" class="company-name">UnicomTIC</a>
-    </div>
-
-    <div class="navbar-right">
-
-      <a href="../views/employees/index.html" class="menu-item">Employee</a>
-
-   
-
-    </div>
-  </nav>
+ 
 
   <main>
-    {{content}}
+ 
+        {{content}}
+  
+    
+ 
   </main>
   <footer>
     {{script}}
   </footer>
+  <script>
+     const logoutButton = document.getElementById('logoutButton');
+            logoutButton.addEventListener('click', function () {
+                console.log("hmjg")
+                localStorage.removeItem('loggedInUser');
+                alert('You have been logged out.');
+                window.location.href = '/login';
+            });
+  </script>
 </body>
 
-</html> -->
-
-
-
-<!-- -----------------------------------------------------------------------DRAF COPY -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Navbar</title>
-    <link rel="stylesheet" href="../static/Css/styles.css">
-    
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <a href="/" class="company-name">Unicom TIC</a>
-        </div>
-        <div class="navbar-right">
-            <a href="../views/leaves/Employee-Management.html" class="menu-item">Employee</a>
-            <div class="dropdown">
-                <button class="dropbtn">Leave Management</button>
-                <div class="dropdown-content">
-                    <a href="../views/leaves/leaveRequest.html">Apply Leave</a>
-                    <a href="../views/leaves/managerLeaveRequest.html">Manage Leave</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        {{content}}
-    </main>
-    {{script}}
-
-</body>
-
-</html> -->
+</html> 
