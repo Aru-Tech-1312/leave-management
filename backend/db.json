@@ -196,6 +196,15 @@
         "doj": "2024-09-01"
       },
       "processedDate": "2024-11-05"
+    },
+    {
+      "id": "27d9",
+      "employeeId": "EMP_4SK8Q",
+      "reason": "fever",
+      "dateFrom": "2024-11-13",
+      "numOfDays": "2",
+      "applicationDate": "2024-11-12",
+      "status": "Pending"
     }
   ]
 }

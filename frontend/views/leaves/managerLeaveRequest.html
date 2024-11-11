@@ -134,7 +134,7 @@
             background-color: #ffffff;
             border-color: #ffffff;
             border-style: groove;
-            
+
         }
 
 
@@ -151,7 +151,7 @@
             padding: 4px;
             margin-top: 5px;
             background-color: #1f293a;
-            
+
 
         }
 
@@ -199,27 +199,29 @@
             cursor: pointer;
         }
 
-        .modal {
+        /* .modal {
             display: none;
+            
             position: fixed;
-            z-index: 1;
+            z-index: 1000;
+            
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         .modal-content {
-            background-color: #ffffff;
-            margin: 15% auto;
+            position: relative;
+            background-color: #fff;
+            margin: 10% auto;
             padding: 20px;
-            border: 1px solid #888;
-            width: 400px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
         }
 
         .modal h3 {
@@ -228,10 +230,14 @@
         }
 
         .close {
-            color: #ff0000;
-            float: right;
-            font-size: 28px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: #aaa;
+            font-size: 24px;
             font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
         }
 
         .close:hover,
@@ -239,6 +245,23 @@
             color: black;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        #rejectForm label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        #rejectForm textarea {
+            width: 100%;
+            height: 80px;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: none;
+            box-sizing: border-box;
         }
 
         textarea {
@@ -262,7 +285,110 @@
 
         .btn:hover {
             background: #000000;
+        } */
+        /* Modal Background Overlay */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 99px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
         }
+
+   
+        .modal-content {
+            background-color: #1f293a;
+            margin-top: 125px;
+            margin-left: 700px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 600px;
+            height: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+     
+        .modal-content h3 {
+            font-size: 24px;
+            color: #fff;
+            /* background-color: #2b2f3a; */
+            padding: 10px;
+            margin-top: 0;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+       
+        .close {
+            color: #ffffff;
+            float: right;
+            margin-top: 1px;
+            margin-right: 12px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: #c7c1c1;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Form Styling */
+        .modal-content form {
+            max-width: 600px;
+            height: 250px;
+            /* padding-top: 10px; */
+            margin: 10px ;
+            padding: 10px;
+            border: 2px solid #050505;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .modal-content label {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .modal-content input[type="text"],
+        .modal-content input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 2px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #fff;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        /* Update Button */
+        .modal-content button[type="submit"] {
+            width: 180px;
+            padding: 5px;
+            background-color:  #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal-content button[type="submit"]:hover {
+            background-color: blue;
+        }
+
 
 
         @keyframes fadeIn {
@@ -320,7 +446,7 @@
             <h3>Reject Leave Request</h3>
 
             <form id="rejectForm">
-                <label for="rejectionReason">Reason for Rejection:</label>
+                <label for="rejectionReason">Reason for Rejection</label>
                 <textarea id="rejectionReason" name="rejectionReason" required></textarea><br><br>
                 <button type="submit" class="btn">Submit</button>
             </form>
@@ -481,7 +607,7 @@
             // Load initial leave requests
             loadLeaveRequests();
         });
-F
+        F
     </script>
 </body>
 
