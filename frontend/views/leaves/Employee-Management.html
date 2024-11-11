@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Management</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .container {
@@ -122,7 +122,7 @@
             display: none;
             position: fixed;
             z-index: 1;
-            padding-top: 100px;
+            padding-top: 99px;
             left: 0;
             top: 0;
             width: 100%;
@@ -131,24 +131,29 @@
         }
 
         .modal-content {
-            background-color: #fff;
-            margin: auto;
-            padding: 20px;
-            border-radius: 8px;
-            width: 50%;
+            background-color: #1f293a;
+            margin-top: 125px;
+            margin-left: 700px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 600px;
+            height: 400px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .close {
-            color: #aaa;
+            color: #ffffff;
             float: right;
-            font-size: 24px;
+            margin-top: 1px;
+            margin-right: 12px;
+            font-size: 50px;
             font-weight: bold;
+            
         }
 
         .close:hover,
         .close:focus {
-            color: #333;
+            color: #c7c1c1;
             text-decoration: none;
             cursor: pointer;
         }
@@ -196,6 +201,90 @@
                 bottom: 0;
                 opacity: 0;
             }
+        }
+
+        #credentialsForm {
+            max-width: 600px;
+            margin: 10px ;
+            padding: 10px;
+            border: 2px solid #050505;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        #employeeForm{
+            max-width: 600px;
+            margin: 10px ;
+            padding: 30px;
+            border: 2px solid #050505;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        /* #credentialsForm table {
+            width: 80%;
+        } */
+         #employeeForm{
+            color: #000000;
+            font-weight: bold;
+         }
+         #employeeForm td{
+            padding: 4px;
+         }
+         #modalTitle{
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+         }
+
+        #credentialsForm td {
+            padding: 2px;
+            
+        }
+        .p{
+            color: #ffffff;
+            
+            text-align: center;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        #credentialsForm label {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        #credentialsForm input[type="text"],
+        #credentialsForm select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 2px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #fff;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        #credentialsForm button[type="submit"] {
+            width: 180px;
+            padding: 5px;
+            background-color:  #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #credentialsForm button[type="submit"]:hover {
+            background-color: blue;
         }
     </style>
 </head>
@@ -245,32 +334,32 @@
                             </tr>
                             <tr>
                                 <div>
-                                    <td><label for="nic">NIC Number:</label></td>
+                                    <td><label for="nic">NIC Number</label></td>
                                     <td><input type="text" id="nic" name="nic" required></td>
                                 </div>
                             </tr>
                             <tr>
                                 <div>
-                                    <td><label for="firstName">First Name:</label></td>
+                                    <td><label for="firstName">First Name</label></td>
                                     <td><input type="text" id="firstName" name="firstName" required></td>
                                 </div>
                                 </td>
                             </tr>
                             <tr>
                                 <div>
-                                    <td><label for="lastName">Last Name:</label></td>
+                                    <td><label for="lastName">Last Name</label></td>
                                     <td><input type="text" id="lastName" name="lastName" required></td>
                                 </div>
                             </tr>
                             <tr>
                                 <div>
-                                    <td><label for="dob">Date of Birth:</label></td>
+                                    <td><label for="dob">Date of Birth</label></td>
                                     <td><input type="date" id="dob" name="dob" required></td>
                                 </div>
                             </tr>
                             <tr>
                                 <div>
-                                    <td><label for="doj">Date of Joining:</label></td>
+                                    <td><label for="doj">Date Of Joining</label></td>
                                     <td><input type="date" id="doj" name="doj" required></td>
                                 </div>
                             </tr>
@@ -286,26 +375,26 @@
         <div id="credentialsModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Edit Credentials</h2>
+                <p class="p">Edit Credentials</p>
                 <form id="credentialsForm">
                     <table>
 
                         <input type="hidden" id="credentialsEmpId" name="empId">
                         <tr>
                             <div>
-                                <td><label for="username">Username:</label></td>
+                                <td><label for="username">Username</label></td>
                                 <td><input type="text" id="username" name="username" disabled required></td>
                             </div>
                         </tr>
                         <tr>
                             <div>
-                                <td><label for="password">Password:</label></td>
+                                <td><label for="password">Password</label></td>
                                 <td><input type="text" id="password" name="password" required></td>
                             </div>
                         </tr>
                         <tr>
                             <div>
-                                <td><label for="userrole">Role:</label></td>
+                                <td><label for="userrole">Role</label></td>
                                 <td><select id="userrole" name="userrole">
                                         <option value="Employee">Employee</option>
                                         <option value="Manager">Manager</option>
@@ -361,7 +450,7 @@
                 users = await response.json();
             };
             // Logout button functionality
-            
+
 
             // Render Employees
             const renderEmployees = () => {

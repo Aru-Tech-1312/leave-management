@@ -30,7 +30,7 @@
     {
       "id": "EMP_d3MnY",
       "employeeId": "EMP_d3MnY",
-      "nic": "987654321",
+      "nic": "987654321456",
       "firstName": "Nirojan",
       "lastName": "bala",
       "dob": "2022-02-09",
@@ -39,7 +39,7 @@
     {
       "id": "EMP_p3dTa",
       "employeeId": "EMP_p3dTa",
-      "nic": "334536478",
+      "nic": "334536478789",
       "firstName": "narthanan",
       "lastName": "sathananthan",
       "dob": "2016-06-14",
@@ -64,20 +64,11 @@
       "doj": "2024-11-20"
     },
     {
-      "id": "EMP_Ogl2V",
-      "employeeId": "EMP_Ogl2V",
-      "nic": "367384989899699",
-      "firstName": "gowsi",
-      "lastName": "ragu",
-      "dob": "2024-09-25",
-      "doj": "2024-11-13"
-    },
-    {
       "id": "EMP_Xljo7",
       "employeeId": "EMP_Xljo7",
-      "nic": "1234567890",
+      "nic": "123456789056",
       "firstName": "robert",
-      "lastName": "sir",
+      "lastName": "Unicom",
       "dob": "2024-09-25",
       "doj": "2024-11-27"
     },
@@ -85,9 +76,9 @@
       "id": "EMP_Gpwbd",
       "employeeId": "EMP_Gpwbd",
       "nic": "123345464v",
-      "firstName": "some",
-      "lastName": "one",
-      "dob": "2024-11-04",
+      "firstName": "Duwarahan",
+      "lastName": "balakrishnan",
+      "dob": "1997-11-04",
       "doj": "2024-11-11"
     }
   ],
@@ -138,13 +129,6 @@
       "id": "EMP_5Rwbg",
       "employeeId": "EMP_5Rwbg",
       "username": "EMP_5Rwbg",
-      "password": "pwd123",
-      "role": "Employee"
-    },
-    {
-      "id": "EMP_Ogl2V",
-      "employeeId": "EMP_Ogl2V",
-      "username": "EMP_Ogl2V",
       "password": "pwd123",
       "role": "Employee"
     },
@@ -212,53 +196,6 @@
         "doj": "2024-09-01"
       },
       "processedDate": "2024-11-05"
-    },
-    {
-      "id": "adad",
-      "employeeId": "EMP_4SK8Q",
-      "reason": "dd",
-      "dateFrom": "2024-12-04",
-      "numOfDays": "2",
-      "applicationDate": "2024-11-05",
-      "status": "Rejected",
-      "employee": {
-        "id": "EMP_4SK8Q",
-        "employeeId": "EMP_4SK8Q",
-        "nic": "723451278V",
-        "firstName": "Leena",
-        "lastName": "Holin",
-        "dob": "1972-12-05",
-        "doj": "2024-09-01"
-      },
-      "processedDate": "2024-11-05",
-      "rejectionReason": "not holiday\n"
-    },
-    {
-      "id": "dbc7",
-      "employeeId": "EMP_4SK8Q",
-      "reason": "function",
-      "dateFrom": "2024-11-08",
-      "numOfDays": "4",
-      "applicationDate": "2024-11-06",
-      "status": "Pending"
-    },
-    {
-      "id": "f3c9",
-      "employeeId": "EMP_mIImt",
-      "reason": "thte",
-      "dateFrom": "2024-11-10",
-      "numOfDays": "4",
-      "applicationDate": "2024-11-09",
-      "status": "Pending"
-    },
-    {
-      "id": "2180",
-      "employeeId": null,
-      "reason": "comple the leave management",
-      "dateFrom": "2024-11-11",
-      "numOfDays": "1",
-      "applicationDate": "2024-11-10",
-      "status": "Pending"
     }
   ]
 }
