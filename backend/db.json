@@ -67,8 +67,8 @@
       "id": "EMP_Xljo7",
       "employeeId": "EMP_Xljo7",
       "nic": "123456789056",
-      "firstName": "robert",
-      "lastName": "Unicom",
+      "firstName": "robert sir",
+      "lastName": "unicom",
       "dob": "2024-09-25",
       "doj": "2024-11-27"
     },
@@ -203,6 +203,15 @@
       "reason": "fever",
       "dateFrom": "2024-11-13",
       "numOfDays": "2",
+      "applicationDate": "2024-11-12",
+      "status": "Pending"
+    },
+    {
+      "id": "f7ec",
+      "employeeId": "EMP_m059b",
+      "reason": "holiday trip ",
+      "dateFrom": "2024-11-15",
+      "numOfDays": "3",
       "applicationDate": "2024-11-12",
       "status": "Pending"
     }
